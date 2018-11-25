@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+  <title>tweeter</title>
+  <!--link rel="stylesheet" type="text/css" href="{%static 'css/styles.css'%}"-->
+</head>
+<body>
+
+  <h1>Tweeter</h1>
+  <p>This is the index.html of the second app.</p>
+  {% for t in tweet %}
+
+  <h5>{{t.date}}</h5>
+  <h2>{{t.name}}</h2>
+  <p>{{t.text}}</p>
+
+  {% endfor %}
+
+</body>
+</html>
